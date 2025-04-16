@@ -144,6 +144,8 @@ $black: #000000;
 }
 
 
+
+
 .info {
   position: absolute;
   bottom: 45px;
@@ -236,7 +238,6 @@ $black: #000000;
   height: 600px;
   background: transparent;
   min-height: 400px;
-  background-image: url('../images/second-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -265,7 +266,6 @@ $black: #000000;
 .tools {
   position: relative;
   height: 540px;
-  background-image: url('../images/third-bg.jpg');
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: right;
@@ -302,6 +302,69 @@ $black: #000000;
   }
 }
 
+
+.clients {
+  padding: 100px 0 140px;
+  background-color: #000;
+  text-align: center;
+  &__subtitle {
+    margin-bottom: 80px;
+    color: $default;
+  }
+  &__list {
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list li {
+    margin-bottom: 40px;
+  }
+  &__list-item {
+    padding: 0 20px;
+  }
+}
+
+
+.help {
+  padding: 100px 0 110px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  &__content {
+    margin: auto;
+    max-width: 570px;
+  }
+  &__subtitle {
+    margin-bottom: 30px;
+  }
+  &__box {
+    width: 100%;
+    align-self: center;
+  }
+  &__link {
+    @extend %btn;
+  }
+}
+
+
+.sb{
+  background-image: url('../images/second-bg.jpg');
+}
+
+.tb{
+  background-image: url('../images/third-bg.jpg');
+}
+
+.fb{
+  background-image: url('../images/fourth-bg.jpg');
+}
+
+.fib{
+  background-image: url('../images/1.jpg');
+}
 
 
 

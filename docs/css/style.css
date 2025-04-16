@@ -1208,7 +1208,6 @@
     height: 600px;
     background: transparent;
     min-height: 400px;
-    background-image: url("../images/second-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1240,7 +1239,6 @@
 .tools {
     position: relative;
     height: 540px;
-    background-image: url("../images/third-bg.jpg");
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: right;
@@ -1281,6 +1279,71 @@
 
 .tools__link {
     position: absolute;
+}
+
+.clients {
+    padding: 100px 0 140px;
+    background-color: #000;
+    text-align: center;
+}
+
+.clients__subtitle {
+    margin-bottom: 80px;
+    color: #c0c0c0;
+}
+
+.clients__list {
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clients__list li {
+    margin-bottom: 40px;
+}
+
+.clients__list-item {
+    padding: 0 20px;
+}
+
+.help {
+    padding: 100px 0 110px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.help__content {
+    margin: auto;
+    max-width: 570px;
+}
+
+.help__subtitle {
+    margin-bottom: 30px;
+}
+
+.help__box {
+    width: 100%;
+    align-self: center;
+}
+
+.sb {
+    background-image: url("../images/second-bg.jpg");
+}
+
+.tb {
+    background-image: url("../images/third-bg.jpg");
+}
+
+.fb {
+    background-image: url("../images/fourth-bg.jpg");
+}
+
+.fib {
+    background-image: url("../images/1.jpg");
 }
 
 @font-face {
@@ -1332,7 +1395,7 @@ button {
     font-weight: 400;
 }
 
-.areas__item-btn, .tools__link {
+.areas__item-btn, .tools__link, .help__link {
     position: relative;
     padding: 10px 20px 12px 40px;
     background-color: #fff;
@@ -1341,7 +1404,7 @@ button {
     transition: box-shadow 0.5s ease;
 }
 
-.areas__item-btn::before, .tools__link::before {
+.areas__item-btn::before, .tools__link::before, .help__link::before {
     position: absolute;
     content: "";
     top: 5px;
@@ -1352,7 +1415,7 @@ button {
     border-radius: 50%;
 }
 
-.areas__item-btn:hover, .tools__link:hover {
+.areas__item-btn:hover, .tools__link:hover, .help__link:hover {
     box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.8);
 }
 
