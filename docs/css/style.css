@@ -1063,6 +1063,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
+    overflow: hidden;
 }
 
 .top::after {
@@ -1127,6 +1128,81 @@
     color: #ffffff;
 }
 
+.areas {
+    padding: 120px 0 110px;
+    background-color: #000;
+}
+
+.areas__inner {
+    text-align: center;
+}
+
+.areas__subtitle {
+    margin-bottom: 40px;
+}
+
+.areas__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    text-align: left;
+}
+
+.areas__item {
+    max-height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.areas__item .areas__img {
+    transition: all 0.5s ease-in-out;
+    filter: blur(0);
+}
+
+.areas__item:hover .areas__img {
+    filter: blur(3px);
+    transition: all 0.3s ease-in-out;
+}
+
+.areas__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.areas__content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 35px;
+    height: 100%;
+}
+
+.areas__item-link {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.areas__item-subtitle {
+    margin-top: auto;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.areas__item-text {
+    margin-bottom: 30px;
+    color: #c0c0c0;
+}
+
+.areas__item-btn {
+    color: #000;
+}
+
 @font-face {
     font-family: "Poppins-Regular";
   font-weight: 400;
@@ -1176,8 +1252,28 @@ button {
     font-weight: 400;
 }
 
-.noscroll {
-    overflow: hidden;
+.areas__item-btn {
+    position: relative;
+    padding: 10px 20px 12px 40px;
+    background-color: #fff;
+    border-radius: 14px;
+    color: #000;
+    transition: box-shadow 0.5s ease;
+}
+
+.areas__item-btn::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.areas__item-btn:hover {
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.8);
 }
 
 /* Large desktops and laptops */
