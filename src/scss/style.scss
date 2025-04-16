@@ -231,6 +231,80 @@ $black: #000000;
 }
 
 
+.photo {
+  position: relative;
+  height: 600px;
+  background: transparent;
+  min-height: 400px;
+  background-image: url('../images/second-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  &__inner {
+    padding-right: 60px;
+    max-width: 360px;
+    margin-left: auto;
+    height: 100%;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  &__subtitle {
+    color: #fff;
+    margin-top: auto;
+  }
+  &__text {
+    margin-bottom: auto;
+    color: $default;
+  }
+}
+
+
+.tools {
+  position: relative;
+  height: 540px;
+  background-image: url('../images/third-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right;
+  background-color: #000;
+  &__inner {
+    max-width: 620px;
+    padding-left: 100px;
+    height: 100%;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  &__subtitle {
+    margin-top: auto;
+    margin-bottom: 5px;
+  }
+  &__title {
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+  }
+  &__text {
+    margin-bottom: 20px;
+  }
+  &__box {
+    margin-bottom: auto;
+  }
+  &__link {
+    @extend %btn;
+    position: absolute;
+  }
+}
+
+
+
+
 // .footer {
 
 // }
