@@ -1343,7 +1343,131 @@
 }
 
 .fib {
-    background-image: url("../images/1.jpg");
+    background-image: url("../images/fifth-bg.jpg");
+}
+
+.footer {
+    padding: 100px 0 110px;
+    background-color: #000;
+}
+
+.footer-top__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.footer-top__box {
+    width: 600px;
+    padding-right: 20px;
+}
+
+.footer-top__info {
+    width: 190px;
+    padding-right: 20px;
+}
+
+.footer-top__text {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.footer-top__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footer-top__item {
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-top__link {
+    line-height: 1.5;
+    color: #fff;
+    transition: color 0.2s ease;
+}
+
+.footer-top__link:hover {
+    color: #c0c0c0;
+}
+
+.footer-top__form-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.footer-top__form-info {
+    padding-right: 20px;
+}
+
+.footer-top__form-title {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-top__form-text {
+    font-size: 13px;
+}
+
+.footer-top__form {
+    position: relative;
+}
+
+.footer-top__form-input {
+    padding: 10px 100px 10px 15px;
+    width: 480px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.footer-top__form-btn {
+    position: absolute;
+    width: 65px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #000;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.footer-top__form-btn:hover {
+    box-shadow: 0px 0px 5px 2px rgb(0, 0, 0);
+}
+
+.footer-bottom {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom__social-list {
+    display: flex;
+    align-items: center;
+}
+
+.footer-bottom__social-item {
+    padding: 10px;
+}
+
+.footer-bottom__social-link svg path {
+    transition: all 0.3s ease;
+}
+
+.footer-bottom__social-link:hover svg path {
+    transition: all 0.3s ease;
+    fill: #fff;
 }
 
 @font-face {

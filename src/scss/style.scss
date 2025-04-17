@@ -363,10 +363,124 @@ $black: #000000;
 }
 
 .fib{
-  background-image: url('../images/1.jpg');
+  background-image: url('../images/fifth-bg.jpg');
 }
 
 
+.footer {
+  padding: 100px 0 110px;
+  background-color: #000;
+}
+
+.footer-top {
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+  }
+  &__box {
+    width: 600px;
+    padding-right: 20px;
+  }
+  &__info {
+    width: 190px;
+    padding-right: 20px;
+  }
+  &__text {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  &__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  &__item {
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  &__link {
+    line-height: 1.5;
+    color: #fff;
+    transition: color .2s ease;
+    &:hover {
+      color: $default;
+    }
+  }
+  &__form-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+  }
+  &__form-info {
+    padding-right: 20px;
+  }
+  &__form-title {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  &__form-text {
+    font-size: 13px;
+  }
+  &__form {
+    position: relative;
+  }
+  &__form-input {
+    padding: 10px 100px 10px 15px;
+    width: 480px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  &__form-btn {
+    position: absolute;
+    width: 65px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #000;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    transition: box-shadow 0.3s ease;
+    &:hover {
+      box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 1);
+    }
+  }
+}
+
+.footer-bottom {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__social-list {
+    display: flex;
+    align-items: center;
+  }
+  &__social-item {
+    padding: 10px;
+  }
+  &__social-link {
+    svg {
+      path {
+        transition: all 0.3s ease;
+      }
+    }
+  }
+  &__social-link:hover {
+    svg {
+      path {
+        transition: all 0.3s ease;
+        fill: #fff;
+      }
+    }
+  }
+}
 
 // .footer {
 
