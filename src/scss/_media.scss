@@ -1,43 +1,209 @@
 $maxWidth: 1200;
 
 @mixin adaptiv-font($pcSize, $mobSize) {
-    $addSize: $pcSize - $mobSize;
-    $addMobSize: $addSize + $addSize * 0.7;
-
-    @media (max-width: 767px) {
-        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
-    }
-
-    @media (min-width: 767px) {
-        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
-    }
+  $addSize: $pcSize - $mobSize;
+  $addMobSize: $addSize + $addSize * 0.7;
+  @media (max-width: 767px) {
+    font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+  }
+  @media (min-width: 767px) {
+    font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+  }
 }
-
-// @include adaptiv-font(120, 50);
 
 @media (max-width: 1600px) {
-
+  .tools {
+    height: 450px;
+    &__inner {
+      padding: 0 50px;
+    }
+    &__text {
+      max-width: 500px;
+    }
+  }
 }
 
-
-/* Large desktops and laptops */
-/* Portrait tablets and medium desktops */
-@media (max-width: 1200px) {
-
+@media (max-width: 1199px) {
+  .title {
+    @include adaptiv-font(40, 28);
+  }
+  .subtitle-second {
+    @include adaptiv-font(24, 18);
+  }
+  .top {
+    &__title {
+      @include adaptiv-font(54, 34);
+    }
+    .info {
+      bottom: 20px;
+    }
+  }
+  .tools {
+    &__text {
+      max-width: 400px;
+    }
+  }
 }
 
-
-/* Portrait tablets and small desktops */
 @media (max-width: 991px) {
-
+  .tools {
+    background-image: none;
+    .info {
+      display: none;
+    }
+  }
+  .clients {
+    padding: 50px 0 20px;
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__subtitle {
+      margin-bottom: 40px;
+    }
+  }
+  .help {
+    padding: 70px 0;
+  }
+  .footer-top {
+    &__box {
+      width: 400px;
+    }
+  }
+  .footer {
+    padding: 50px 0;
+  }
 }
 
-
-/* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+  .header {
+    &__btn {
+      display: none;
+    }
+  }
+  .menu {
+    &__list {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #181818;
+      opacity: 0;
+      transition: opacity .3s ease-in-out;
+    }
+    &__list.active {
+      opacity: 1;
+    }
+    &__list-link {
+      position: relative;
+      display: block;
+      padding: 15px 0;
+      @include adaptiv-font(30, 18);
 
+      transform: translateY(50%);
+      opacity: 0;
+      transition: transform, opacity .5s ease 1s;
+    }
+    &__list-link.animation {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+    &__btn {
+      position: relative;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 22px;
+      background-color: transparent;
+      border: none;
+      span {
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+      }
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+      }
+      &::before {
+        top: 0;
+      }
+      &::After {
+        bottom: 0;
+      }
+    }
+  }
+  .top {
+    &__title {
+      margin-bottom: 10px;
+    }
+  }
+  .areas {
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+    }
+  }
+  .photo {
+    height: 350px;
+    max-height: 300px;
+    &__inner {
+      margin: auto;
+      padding: 0 15px;
+    }
+  }
+  .help {
+    .title {
+      @include adaptiv-font(40, 22);
+    }
+  }
+  .footer-top {
+    .logo {
+      display: flex;
+      justify-content: center;
+    }
+    &__text {
+      margin-bottom: 30px;
+    }
+    &__items {
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+    &__box{
+      padding-right: 0;
+      width: 300px;
+    }
+    &__info {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+    &__form-box {
+      flex-direction: column;
+    }
+    &__form-text {
+      margin-bottom: 20px;
+    }
+    &__form-input {
+      width: 100%;
+    }
+  }
+  .footer-bottom {
+    flex-direction: column;
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
 }
 
-
-/* Landscape phones and smaller */
-@media (max-width: 480px) {}

@@ -10720,6 +10720,14 @@ return jQuery;
 $(function () {
 
 
+  $('.menu__btn').on('click', function () {
+    $('.menu__list').toggleClass('active');
+    $('.menu__list-link').toggleClass('animation');
+    // document.querySelector('body').classList.toggle('noscroll');
+  });
+
+
+
   window.onscroll = function () { scrollFunction() };
 
   function scrollFunction() {

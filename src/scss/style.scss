@@ -112,7 +112,7 @@ $black: #000000;
 
 .top {
   position: relative;
-  // background-image: url('../images/main-bg.jpg');
+  background-image: url('../images/main-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -243,7 +243,7 @@ $black: #000000;
   position: relative;
   height: 600px;
   background: transparent;
-  min-height: 400px;
+  max-height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom bottom;
@@ -254,6 +254,7 @@ $black: #000000;
     height: 100%;
   }
   &__content {
+    padding-right: 10px;
     position: absolute;
     z-index: 10;
     display: flex;
