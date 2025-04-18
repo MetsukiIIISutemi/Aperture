@@ -1231,7 +1231,6 @@
 }
 
 .photo__content {
-    padding-right: 10px;
     position: absolute;
     z-index: 10;
     display: flex;
@@ -1483,6 +1482,12 @@ body {
     background-color: #ccc;
 }
 
+.noscroll::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 .container {
     margin: 0 auto;
     padding: 0 15px;
@@ -1650,7 +1655,7 @@ button {
         left: 0;
         top: 0;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background-color: #181818;
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
