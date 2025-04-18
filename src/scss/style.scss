@@ -44,6 +44,14 @@ $black: #000000;
   }
 }
 
+.header-mini {
+  padding: 10px 0;
+  background-color: rgba(24, 24, 24, 0.8);
+  &__btn {
+    padding: 5px 10px 6px;
+    min-width: 100px;
+  }
+}
 
 .menu {
   display: flex;
@@ -104,7 +112,7 @@ $black: #000000;
 
 .top {
   position: relative;
-  background-image: url('../images/main-bg.jpg');
+  // background-image: url('../images/main-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -142,8 +150,6 @@ $black: #000000;
     margin-bottom: 70px;
   }
 }
-
-
 
 
 .info {
@@ -240,7 +246,7 @@ $black: #000000;
   min-height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: bottom bottom;
   &__inner {
     padding-right: 60px;
     max-width: 360px;
@@ -248,6 +254,8 @@ $black: #000000;
     height: 100%;
   }
   &__content {
+    position: absolute;
+    z-index: 10;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -270,6 +278,7 @@ $black: #000000;
   background-size: 50%;
   background-position: right;
   background-color: #000;
+  background-image: url('../images/third-bg.jpg');
   &__inner {
     max-width: 620px;
     padding-left: 100px;
@@ -347,23 +356,6 @@ $black: #000000;
   &__link {
     @extend %btn;
   }
-}
-
-
-.sb{
-  background-image: url('../images/second-bg.jpg');
-}
-
-.tb{
-  background-image: url('../images/third-bg.jpg');
-}
-
-.fb{
-  background-image: url('../images/fourth-bg.jpg');
-}
-
-.fib{
-  background-image: url('../images/fifth-bg.jpg');
 }
 
 
@@ -481,7 +473,3 @@ $black: #000000;
     }
   }
 }
-
-// .footer {
-
-// }

@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "backpax": "^1.0.8",
     "jquery": "^3.7.1"
   }
 }

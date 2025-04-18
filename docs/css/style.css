@@ -993,6 +993,16 @@
     box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.8);
 }
 
+.header-mini {
+    padding: 10px 0;
+    background-color: rgba(24, 24, 24, 0.8);
+}
+
+.header-mini__btn {
+    padding: 5px 10px 6px;
+    min-width: 100px;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -1059,7 +1069,6 @@
 
 .top {
     position: relative;
-    background-image: url("../images/main-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -1210,7 +1219,7 @@
     min-height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: bottom bottom;
 }
 
 .photo__inner {
@@ -1221,6 +1230,8 @@
 }
 
 .photo__content {
+    position: absolute;
+    z-index: 10;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -1243,6 +1254,7 @@
     background-size: 50%;
     background-position: right;
     background-color: #000;
+    background-image: url("../images/third-bg.jpg");
 }
 
 .tools__inner {
@@ -1328,22 +1340,6 @@
 .help__box {
     width: 100%;
     align-self: center;
-}
-
-.sb {
-    background-image: url("../images/second-bg.jpg");
-}
-
-.tb {
-    background-image: url("../images/third-bg.jpg");
-}
-
-.fb {
-    background-image: url("../images/fourth-bg.jpg");
-}
-
-.fib {
-    background-image: url("../images/fifth-bg.jpg");
 }
 
 .footer {
